@@ -13,3 +13,9 @@ www.Minecraft.net
 通过禁用服务实现绕过参见：https://github.com/xingchuanzhen
 
 通过修改内存实现绕过参见：https://github.com/xingchuanzhen/Minecraft_Memory_Bypass
+
+### 说明
+
+仅仅适配1.8.2的Minecraft其他版本可能需要修改偏移量来绕过
+
+控制台程序，并没有专门设计图形化界面
