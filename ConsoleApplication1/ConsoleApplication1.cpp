@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include <tlhelp32.h>
-#include<TlHelp32.h>
+#include <TlHelp32.h>
 
 /// <summary>
 /// 根据进程ID得到进程窗口句柄
@@ -67,7 +67,8 @@ uintptr_t GetModuleBaseAddress(DWORD procId, const char* modName)
             } while (Module32Next(hSnap, &modEntry));
         }
     }
-    else {
+    else 
+    {
         std::cout << "INVALID_HANDLE_VALUE returned" << std::endl;
     }
     CloseHandle(hSnap);
@@ -93,7 +94,7 @@ int main()
     char Buffer[1] = { 0xEB };
     //偏移量
     int Offset = 18206166;
-
+    //写入内存
     WriteProcessMemory(handle, LPVOID(baseAddr + Offset), Buffer, 1ui64, 0i64);
 
     return 0;
