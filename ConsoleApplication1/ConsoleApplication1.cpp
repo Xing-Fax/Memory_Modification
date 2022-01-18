@@ -95,7 +95,7 @@ int main()
     //偏移量
     int Offset = 18206166;
     //写入内存
-    WriteProcessMemory(handle, LPVOID(baseAddr + Offset), Buffer, 1ui64, 0i64);
+    WriteProcessMemory(handle, LPVOID(baseAddr + Offset), Buffer, 1, 0);
 
     return 0;
 }
