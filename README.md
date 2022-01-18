@@ -19,3 +19,5 @@ www.Minecraft.net
 仅仅适配1.8.2的Minecraft其他版本可能需要修改偏移量来绕过
 
 控制台程序，并没有专门设计图形化界面
+
+本程序遵循GPL ( GNU General Public License )开源许可协议，程序仅供学习交流，严禁商用或其他非法用途！
